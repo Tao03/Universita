@@ -1,7 +1,5 @@
-package orderedArray;
 import java.util.ArrayList;
 import java.util.Comparator;
-
 /**
  * @author Tao
  * @param <T>: type of the array elements
@@ -30,7 +28,7 @@ public class OrderedArray<T>{
     }
     public void add ( T elem) throws OrderedArrayException {
         if(elem == null){
-            throw new OrderedArrayException("--add: element can't be null");
+           throw new OrderedArrayException("--add: element can't be null");
         }
         int index = getIndexInsert(elem);
         (this.array).add(index,elem);
@@ -55,9 +53,9 @@ public class OrderedArray<T>{
      * @return: the element at position i
      * @throws OrderedArray: if and only if i is out of the array bounds 
      */
-    public T get(int i ) throws OrderedArrayException{
+    public T get(int i ) {
         if(i<0 || i>= this.array.size()){
-            throw new OrderedArrayException("out of bound");
+            //throw new OrderedArrayException("out of bound");
         }
         return (this.array).get(i);
     }

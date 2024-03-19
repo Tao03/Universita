@@ -1,4 +1,3 @@
-package orderedarray;
 import org.junit.runner.JunitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notificatioon.Failure;
