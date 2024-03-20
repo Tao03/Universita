@@ -1,5 +1,7 @@
+package orderedarray;
 import java.util.ArrayList;
 import java.util.Comparator;
+
 /**
  * @author Tao
  * @param <T>: type of the array elements
