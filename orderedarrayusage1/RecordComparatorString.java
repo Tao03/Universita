@@ -1,4 +1,4 @@
-package orderedarrayusage;
+package orderedarrayusage1;
 import java.util.Comparator;
 public class RecordComparatorString implements Comparator<Record> {
     @Override

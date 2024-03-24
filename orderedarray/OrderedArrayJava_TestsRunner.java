@@ -1,7 +1,8 @@
 package orderedarray;
-import org.junit.runner.JunitCore;
+import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
-import org.junit.runner.notificatioon.Failure;
+import org.junit.runner.notification.Failure;
+
 
 
 public class OrderedArrayJava_TestsRunner {
@@ -10,9 +11,9 @@ public class OrderedArrayJava_TestsRunner {
      */
     public static void main(String[] args){
         Result res = JUnitCore.runClasses(OrderedArrayTests.class);
-        for(com.sun.net.httpserver.Authenticator.Failure fail: res.getFailures() ){
+        for(Failure fail : res.getFailures() ){
             System.out.println(fail.toString());
         }
-        System.out.println("Esito test: "+res.wasSuccessful);
+        System.out.println("Esito test: "+res.wasSuccessful());
     }
 }

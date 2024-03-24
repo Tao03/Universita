@@ -2,12 +2,14 @@ package orderedarray;
 import java.beans.Transient;
 import java.util.Comparator;
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertArrayFalse;
-import static org.junit.Assert.assertArrayTrue;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import orderedArray.OrderedArray;
+import orderedarray.OrderedArray;
 public class OrderedArrayTests {
     class IntegerComparator implements Comparator<Integer>{
         @Override
@@ -33,7 +35,7 @@ public class OrderedArrayTests {
     @Test
     public void testIsEmpty_oneEl() throws Exception{
         orderedArray.add(i1);
-        assertFalse(OrderedArray.isEmpty);
+        assertFalse(orderedArray.isEmpty());
     }
 
     @Test

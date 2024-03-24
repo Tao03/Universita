@@ -1,3 +1,4 @@
+package orderedarrayusage1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -9,8 +10,8 @@ import java.util.Comparator;
 
 import orderedarray.OrderedArrayException;
 import orderedarray.OrderedArray;
-import orderedarrayusage.Record;
-import orderedarrayusage.RecordComparatorString;
+import orderedarrayusage1.Record;
+import orderedarrayusage1.RecordComparatorString;
 
 public class OrderedArrayUsageJava{
     private static final Charset ENCODING = StandardCharsets.UTF_8;
@@ -28,7 +29,7 @@ public class OrderedArrayUsageJava{
 
     }
 
-    private static void testWithComparisonFunction(String filepath, Comparator<orderedarrayusage.Record> comparator) throws IOException,OrderedArrayException{
+    private static void testWithComparisonFunction(String filepath, Comparator<Record> comparator) throws IOException,OrderedArrayException{
         OrderedArray<Record> orderedArray = new OrderedArray(comparator);
         loadArray(filepath,orderedArray);
         printArray(orderedArray);
